@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from www.agrolook.com/about by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 25 Jul 2024 14:13:37 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<!-- /Added by HTTrack -->
+
+<head>
+
+    <title>agrotech</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="../cdn.jsdelivr.net/npm/bootstrap%405.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="../cdn.jsdelivr.net/gh/kenwheeler/slick%401.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../cdn.jsdelivr.net/npm/slick-carousel%401.8.1/slick/slick.css" />
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <!-- Tabs Script -->
+    <link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="header-section">
+        <nav>
+            <div class="row justify-content-between common-width">
+                <div class="col-6 col-md-3 header-left">
+                    <a href="index-2.html">
+                        <img src="assets/images/Agrolook.png" alt="logo" class="logo">
+                    </a>
+                </div>
+                <div class="col-6 col-md-9 header-right">
+                    <div class="hamburger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                    <div class="header-social-section">
+                        <a class="social-icons" target="_blank" href="https://www.facebook.com/mahamayalifescience/">
+                            <img src="assets/images/facebook-b-outline.png" alt="logo3" class="facebook">
+                        </a>
+                        <a class="social-icons" target="_blank" href="https://www.instagram.com/mahamaya_lifesciences/">
+                            <img src="assets/images/instagram.png" alt="logo1" class="instagram">
+                        </a>
+                        <a class="social-icons" target="_blank" href="https://x.com/MahamayaLifesc1">
+                            <img src="assets/images/twitter-b-outline.jpg" alt="logo2" class="twitter">
+                        </a>
+
+                        <!--<div class="header-search-section mobhide">-->
+                        <!--  <div class="floating-label search-floating-label">-->
+                        <!--    <input class="floating-input search-floating-input" type="search" placeholder=" ">-->
+                        <!--    <span class="search-highlight"></span>-->
+                        <!--    <label class="para-font search-label">SEARCH</label>-->
+                        <!--  </div>-->
+                        <!--  <span class="search-span">-->
+                        <!--    <button class="search-btn">-->
+                        <!--      <img src="https://www.agrolook.com/assets/images/search.png" alt="search" class="search">-->
+                        <!--    </button>-->
+                        <!--  </span>-->
+                        <!--</div>-->
+                    </div>
+                    <div class="header-nav-section">
+                        <ul class="nav-links">
+                            <li><a class="para-font" id="homeid" href="index-2.html" aria-current="page">HOME</a></li>
+                            <li><a class="para-font" id="aboutid" href="about.html">ABOUT</a></li>
+                            <li><a class="para-font" id="newsid" href="Login.html">Register</a></li>
+                            <li><a class="para-font" id="subscriptionid" href="Weather.html">Weather</a></li>
+                            <li><a class="para-font" id="subscriptionid" href="equipments.html">Equipments</a></li>
+                            <li><a class="para-font" id="eventsid" href="events.html">EVENTS</a></li>
+                            <li><a class="para-font" id="contactid" href="contact.html">CONTACT</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        const links = document.querySelectorAll(".nav-links li");
+
+        hamburger.addEventListener('click', () => {
+            //Animate Links
+            navLinks.classList.toggle("open");
+            links.forEach(link => {
+                link.classList.toggle("fade");
+            });
+
+            //Hamburger Animation
+            hamburger.classList.toggle("toggle");
+        });
+    </script>
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <div class="col-10 col-md-3 header-left">
+          <a href="index">
+            <img src="https://www.agrolook.com/assets/images/Agrolook.jpg" alt="logo" class="logo">
+          </a>
+        </div>
+
+        <div class="col-2 col-md-9 header-right">
+          <div class="row justify-content-end">
+            <div class="col-md-12 text-end">
+              <a href="#" class="social-icons">
+                <img src="https://www.agrolook.com/assets/images/instagram.png" alt="logo1" class="instagram">
+              </a>
+              <a href="#" class="social-icons">
+                <img src="https://www.agrolook.com/assets/images/twitter.png" alt="logo2" class="twitter">
+              </a>
+              <a href="#" class="social-icons">
+                <img src="https://www.agrolook.com/assets/images/facebook.png" alt="logo3" class="facebook">
+              </a>
+              <div class="floating-label search-floating-label">
+                <input class="floating-input search-floating-input" type="search" placeholder=" ">
+                <span class="highlight"></span>
+                <label class="para-font search-label">SEARCH</label>
+                <span class="search-span">
+                  <button class="search-btn">
+                    <img src="https://www.agrolook.com/assets/images/search.png" alt="search" class="search">
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-end">
+            <div class="col-md-12">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mt-10 float-end" id="navbar-ul">
+                  <li class="nav-item">
+                    <a class="nav-link para-font" id="homeid" aria-current="page" href="/index">HOME</a>
+                  </li>
+                  <span>|</span>
+                  <li class="nav-item">
+                    <a class="nav-link para-font" id="aboutid" href="/about">ABOUT</a>
+                  </li>
+                  <span>|</span>
+                  <li class="nav-item">
+                    <a class="nav-link para-font" id="newsid" href="/news">NEWS</a>
+                  </li>
+                  <span>|</span>
+                  <li class="nav-item">
+                    <a class="nav-link para-font" id="eventsid" href="/events">EVENTS</a>
+                  </li>
+                  <span>|</span>
+                  <li class="nav-item">
+                    <a class="nav-link para-font" id="subscriptionid" href="/subscription">SUBSCRIPTION</a>
+                  </li>
+                  <span>|</span>
+                  <li class="nav-item">
+                    <a class="nav-link para-font" id="contactid" href="/contact">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav> -->
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+                <input type="text" placeholder="Enter your location" class="input-box">
+
+                <button class="fa-solid fa-magnifying-glass" id="searchBtn">&#128269</button>
+            </div>
+        </div>
+
+        <div class="location-not-found">
+            <h1>Sorry, Location not found!!!</h1>
+            <img src="./assets/assets/404.png" alt="404 Error">
+        </div>
+
+        <div class="weather-body">
+            <img src="./assets/assets/cloud.png" alt="Weather Image" class="weather-img">
+
+            <div class="weather-box">
+                <p class="temperature">0<sup>°C</sup></p>
+                <p class="description">light rain</p>
+            </div>
+
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-sharp fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="wind-speed">12Km/H</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/595a890311.js" crossorigin="anonymous"></script>
+
+    <script>
+        var page = "weather";
+    </script>
+
+    <section class="footer-section">
+        <div class="row justify-content-between common-width ptb-20">
+            <div class="col-12 col-md-3">
+                <img src="../www.agrolook.com/assets/images/Agrolook.png" alt="logo" class="footer-logo">
+            </div>
+            <div class="col-4 col-md-1">
+                <div><a class="footer-text para-font" href="index-2.html">Home</a></div>
+                <div><a class="footer-text para-font" href="about.html">About</a></div>
+                <div><a class="footer-text para-font" href="login.html">Register</a></div>
+                <div><a class="footer-text para-font" href="weather.html">Weather</a></div>
+            </div>
+            <div class="col-4 col-md-1">
+                <div><a class="footer-text para-font" href="equipments.html">Equipments</a></div>
+                <div><a class="footer-text para-font" href="events.html">Events</a></div>
+                <div><a class="footer-text para-font" href="contact.html">Contact</a></div>
+            </div>
+            <div class="col-4 col-md-2">
+                <div class="ml-15">
+                    <img src="assets/images/facebook-b-outline.png" alt="logo3" class="footer-social-icon">
+                    <a class="footer-text para-font ml-5" target="_blank" href="https://www.facebook.com/mahamayalifescience/">Facebook</a>
+                </div>
+                <div class="ml-15">
+                    <img src="assets/images/instagram.png" alt="logo1" class="footer-social-icon">
+                    <a class="footer-text para-font ml-5" target="_blank" href="https://www.instagram.com/mahamaya_lifesciences/">Instagram</a>
+                </div>
+                <div class="ml-15">
+                    <img src="assets/images/twitter-b-outline.jpg" alt="logo2" class="footer-social-icon">
+                    <a class="footer-text para-font ml-5" target="_blank" href="https://x.com/MahamayaLifesc1">Twitter</a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="ml-80">
+                    <p class="footer-p para-font subs-foot-text">Email address</p>
+                    <form>
+                        <div class="form-floating d-flex mt-10">
+                            <input type="email" class="form-control footer-email" id="floatingInput" placeholder="Email Address">
+                            <label for="floatingInput" class="email-label"></label>
+                            <button type="button" class="btn btn-dark ok-btn">OK</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="address">
+                    <img src="assets/images/location-b-outline.png" alt="footer-map" class="footer-map-mob">
+                    <p class="footer-p para-font">
+                        Jagamonan Nagar, Bhubaneswar,pin:751030
+                    </p>
+                </div>
+                <div class="address">
+                    <img src="assets/images/phone-b-outline.png" alt="footer-map" class="footer-map-mob">
+                    <a class="para-font" href="tel:+919971222723">+91 9971222723</a>
+                </div>
+                <div class="address">
+                    <img src="assets/images/mail-b-outline.png" alt="footer-map" class="footer-map-mob">
+                    <a class="para-font" href="mailto:info@agrotech.com">info@agrotech.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-footer-sticky">
+        <div class="row common-width">
+            <div class="col-md-6">
+                <p class="copyright-text">
+                    Copyright @Agrotech. All Rights Reserved.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <p class="copyright-text bm-link">
+                    Created by <a target="_blank" href="https://www.beakmedia.com/">Agrotech Team</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="../cdn.jsdelivr.net/npm/bootstrap%405.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+-->
+
+    <script type="text/javascript" src="../cdn.jsdelivr.net/npm/slick-carousel%401.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $('.items').slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1
+            });
+            $('.partners').slick({
+                infinite: true,
+                slidesToShow: 2,
+                slidesToScroll: 1
+            });
+        });
+    </script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            $("#navbar-ul li a").click(function() {
+                $("#navbar-ul li a.active").removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+    </script>
+
+    <script>
+        if (page == 'home') {
+            $('#homeid').addClass('active');
+        } else if (page == 'about') {
+            $('#aboutid').addClass('active');
+        } else if (page == 'news') {
+            $('#newsid').addClass('active');
+        } else if (page == 'events') {
+            $('#eventsid').addClass('active');
+        } else if (page == 'subscription') {
+            $('#subscriptionid').addClass('active');
+        } else if (page == 'magazine') {
+            $('#subscriptionid').addClass('active');
+        } else if (page == 'sponsors') {
+            $('#sponsorsid').addClass('active');
+        } else if (page == 'contact') {
+            $('#contactid').addClass('active');
+        }
+    </script>
+
+</body>
+
+</html>

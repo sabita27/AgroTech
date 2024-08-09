@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soil Testing Form</title>
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</head>
+
+<body>
+    <div class="logo text-center">
+        <!-- Logo content -->
+    </div>
+    <div class="wrapper">
+        <div class="inner-wrapper text-center">
+            <h2 class="title">Soil Testing</h2>
+
+            <form id="formvalidate" onsubmit="submitForm(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="User Name" required><br><br>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder="Address" required><br><br>
+
+                <label for="contact">Contact:</label>
+                <input type="tel" id="contact" name="contact" placeholder="Contact Number" required><br><br>
+
+                <label for="datetime">Date & Time:</label>
+                <input type="datetime-local" id="datetime" name="datetime" required><br><br>
+
+                <button type="submit">Submit</button>
+                <button type="button" onclick="getCurrentLocation()">Current Location</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+            alert('Form submitted successfully');
+            // Optionally, you can reset the form here if needed
+            document.getElementById('formvalidate').reset();
+        }
+
+        function getCurrentLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        }
+
+        function showPosition(position) {
+            var lat = position.coords.latitude;
+            var lon = position.coords.longitude;
+            // Reverse geocode using a geocoding API to get the address
+            var geocodeUrl = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lon}&key=AIzaSyD8zmdjIQ7ULbsqw44L4Lm3vhFEYAXVwqM`;
+
+            fetch(geocodeUrl)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === "OK") {
+                        var address = data.results[0].formatted_address;
+                        document.getElementById('address').value = address;
+                    } else {
+                        alert("Geocoding failed: " + data.status);
+                    }
+                })
+                .catch(error => console.log('Error:', error));
+        }
+
+        function showError(error) {
+            switch (error.code) {
+                case error.PERMISSION_DENIED:
+                    alert("User denied the request for Geolocation.");
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    alert("Location information is unavailable.");
+                    break;
+                case error.TIMEOUT:
+                    alert("The request to get user location timed out.");
+                    break;
+                case error.UNKNOWN_ERROR:
+                    alert("An unknown error occurred.");
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>

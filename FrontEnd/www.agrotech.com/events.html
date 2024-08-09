@@ -1,0 +1,743 @@
+<!doctype html>
+<html lang="en">
+
+<!-- Mirrored from www.agrolook.com/events by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 25 Jul 2024 14:13:37 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<!-- /Added by HTTrack -->
+
+<head>
+
+    <title>agrotech</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="../cdn.jsdelivr.net/npm/bootstrap%405.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="../cdn.jsdelivr.net/gh/kenwheeler/slick%401.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../cdn.jsdelivr.net/npm/slick-carousel%401.8.1/slick/slick.css" />
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <!-- Tabs Script -->
+    <link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+
+    <section class="header-section">
+        <nav>
+            <div class="row justify-content-between common-width">
+                <div class="col-6 col-md-3 header-left">
+                    <a href="index-2.html">
+                        <img src="assets/images/Agrolook.png" alt="logo" class="logo">
+                    </a>
+                </div>
+                <div class="col-6 col-md-9 header-right">
+                    <div class="hamburger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                    <div class="header-social-section">
+                        <a class="social-icons" target="_blank" href="https://www.facebook.com/mahamayalifescience/">
+                            <img src="assets/images/facebook-b-outline.png" alt="logo3" class="facebook">
+                        </a>
+                        <a class="social-icons" target="_blank" href="https://www.instagram.com/mahamaya_lifesciences/">
+                            <img src="assets/images/instagram.png" alt="logo1" class="instagram">
+                        </a>
+                        <a class="social-icons" target="_blank" href="https://x.com/MahamayaLifesc1">
+                            <img src="assets/images/twitter-b-outline.jpg" alt="logo2" class="twitter">
+                        </a>
+
+                        <!--<div class="header-search-section mobhide">-->
+                        <!--  <div class="floating-label search-floating-label">-->
+                        <!--    <input class="floating-input search-floating-input" type="search" placeholder=" ">-->
+                        <!--    <span class="search-highlight"></span>-->
+                        <!--    <label class="para-font search-label">SEARCH</label>-->
+                        <!--  </div>-->
+                        <!--  <span class="search-span">-->
+                        <!--    <button class="search-btn">-->
+                        <!--      <img src="https://www.agrolook.com/assets/images/search.png" alt="search" class="search">-->
+                        <!--    </button>-->
+                        <!--  </span>-->
+                        <!--</div>-->
+                    </div>
+                    <div class="header-nav-section">
+                        <ul class="nav-links">
+                            <li><a class="para-font" id="homeid" href="index-2.html" aria-current="page">HOME</a></li>
+                            <li><a class="para-font" id="aboutid" href="about.html">ABOUT</a></li>
+                            <li><a class="para-font" id="newsid" href="Login.html">Register</a></li>
+                            <li><a class="para-font" id="subscriptionid" href="Weather.html">Weather</a></li>
+                            <li><a class="para-font" id="subscriptionid" href="equipments.html">Equipments</a></li>
+                            <li><a class="para-font" id="eventsid" href="events.html">EVENTS</a></li>
+                            <li><a class="para-font" id="contactid" href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+        const links = document.querySelectorAll(".nav-links li");
+
+        hamburger.addEventListener('click', () => {
+            //Animate Links
+            navLinks.classList.toggle("open");
+            links.forEach(link => {
+                link.classList.toggle("fade");
+            });
+
+            //Hamburger Animation
+            hamburger.classList.toggle("toggle");
+        });
+    </script>
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <div class="col-10 col-md-3 header-left">
+          <a href="index">
+            <img src="https://www.agrolook.com/assets/images/Agrolook.jpg" alt="logo" class="logo">
+          </a>
+        </div>
+
+        <div class="col-2 col-md-9 header-right">
+          <div class="row justify-content-end">
+            <div class="col-md-12 text-end">
+              <a href="#" class="social-icons">
+                <img src="https://www.agrolook.com/assets/images/instagram.png" alt="logo1" class="instagram">
+              </a>
+              <a href="#" class="social-icons">
+                <img src="https://www.agrolook.com/assets/images/twitter.png" alt="logo2" class="twitter">
+              </a>
+              <a href="#" class="social-icons">
+                <img src="https://www.agrolook.com/assets/images/facebook.png" alt="logo3" class="facebook">
+              </a>
+              <div class="floating-label search-floating-label">
+                <input class="floating-input search-floating-input" type="search" placeholder=" ">
+                <span class="highlight"></span>
+                <label class="para-font search-label">SEARCH</label>
+                <span class="search-span">
+                  <button class="search-btn">
+                    <img src="https://www.agrolook.com/assets/images/search.png" alt="search" class="search">
+                  </button>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-end">
+            <div class="col-md-12">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mt-10 float-end" id="navbar-ul">
+                  <li class="nav-item">
+                    <a class="nav-link para-font" id="homeid" aria-current="page" href="/index">HOME</a>
+                  </li>
+                  <span>|</span>
+                  <li class="nav-item">
+                    <a class="nav-link para-font" id="aboutid" href="/about">ABOUT</a>
+                  </li>
+                  <span>|</span>
+                  <li class="nav-item">
+                    <a class="nav-link para-font" id="newsid" href="/news">NEWS</a>
+                  </li>
+                  <span>|</span>
+                  <li class="nav-item">
+                    <a class="nav-link para-font" id="eventsid" href="/events">EVENTS</a>
+                  </li>
+                  <span>|</span>
+                  <li class="nav-item">
+                    <a class="nav-link para-font" id="subscriptionid" href="/subscription">SUBSCRIPTION</a>
+                  </li>
+                  <span>|</span>
+                  <li class="nav-item">
+                    <a class="nav-link para-font" id="contactid" href="/contact">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav> -->
+
+    <section class="title-section">
+        <div class="row justify-content-center common-width">
+            <div class="col-12">
+                <p class="title-text head-font text-center">
+                    <!-- <img src="https://www.agrolook.com/assets/images/title-left.png" alt="title-left" class="title-left"> -->
+                    EVENTS
+                    <!-- <img src="https://www.agrolook.com/assets/images/title-right.png" alt="title-right" class="title-right"> -->
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="event-section">
+        <div class="row justify-content-between common-width">
+            <div class="col-12">
+                <div class="tabs-container" id="news-tabs-container">
+                    <ul class="nav nav-pills events-nav-pills" id="news-nav-pills">
+                        <li class="active"><a data-toggle="pill" href="#upcoming" class="para-font">UPCOMING EVENTS</a></li>
+                        <li><a data-toggle="pill" href="#past" class="para-font">PAST EVENTS</a></li>
+                    </ul>
+
+                    <!-- TAB CONTENT -->
+                    <div class="tab-content mt-30">
+
+
+
+                        <!--------------- TAB1 --------------->
+                        <div id="upcoming" class="tab-pane fade in active">
+
+                            <div class="row common-width">
+
+                                <div class="col-12 col-md-6">
+                                    <div class="event-item">
+                                        <div class="event-logo">
+                                            <img src="assets/eventsupcomingupload/Screenshot%202024-07-12%20101924.png" alt="event-logo">
+                                        </div>
+                                        <div class="event-text">
+                                            <p class="event-title para-font">
+                                                7Th Nepal Agritech International Expo
+                                            </p>
+                                            <p class="event-date para-font">
+                                                <img src="assets/images/clock2.png" alt="clock" class="clock"> 14th to 16th February, 2025
+                                            </p>
+                                            <p class="event-date para-font">
+                                                <img src="assets/images/map.png" alt="venue" class="clock"> Bhirkuti Mandap, Exhibition Hall Kathmandu, Nepal
+                                            </p>
+                                            <p class="event-link para-font">
+                                                <a href="https://nepalagritech.com.np/" class="event-link para-font">
+                            Event Link
+                            <img src="assets/images/right-arrow.png" alt="arrow" class="r-arrow-img">
+                          </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="event-item">
+                                        <div class="event-logo">
+                                            <img src="assets/eventsupcomingupload/Screenshot%202024-07-01%20132624.png" alt="event-logo">
+                                        </div>
+                                        <div class="event-text">
+                                            <p class="event-title para-font">
+                                                Agri Malaysia Agmy
+                                            </p>
+                                            <p class="event-date para-font">
+                                                <img src="assets/images/clock2.png" alt="clock" class="clock"> 26th-28th September 2024
+                                            </p>
+                                            <p class="event-date para-font">
+                                                <img src="assets/images/map.png" alt="venue" class="clock"> Setia city convention center, Malaysia
+                                            </p>
+                                            <p class="event-link para-font">
+                                                <a href="https://agrimalaysia.com.my/" class="event-link para-font">
+                            Event Link
+                            <img src="assets/images/right-arrow.png" alt="arrow" class="r-arrow-img">
+                          </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="event-item">
+                                        <div class="event-logo">
+                                            <img src="assets/eventsupcomingupload/Screenshot%202024-06-26%20161433.png" alt="event-logo">
+                                        </div>
+                                        <div class="event-text">
+                                            <p class="event-title para-font">
+                                                2024 AgroChemEx
+                                            </p>
+                                            <p class="event-date para-font">
+                                                <img src="assets/images/clock2.png" alt="clock" class="clock"> 14-16 October, 2024
+                                            </p>
+                                            <p class="event-date para-font">
+                                                <img src="assets/images/map.png" alt="venue" class="clock"> World Expo Exhibition and Convention center, Shanghai
+                                            </p>
+                                            <p class="event-link para-font">
+                                                <a href="https://www.aceshow.com/html/html/index.html" class="event-link para-font">
+                            Event Link
+                            <img src="assets/images/right-arrow.png" alt="arrow" class="r-arrow-img">
+                          </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="event-item">
+                                        <div class="event-logo">
+                                            <img src="assets/eventsupcomingupload/Screenshot%202024-06-24%20121001.png" alt="event-logo">
+                                        </div>
+                                        <div class="event-text">
+                                            <p class="event-title para-font">
+                                                CAC 25- 25th China International Agrochemical &amp; Crop Protection Exhibition
+                                            </p>
+                                            <p class="event-date para-font">
+                                                <img src="assets/images/clock2.png" alt="clock" class="clock"> 17th-19th March, 2025`
+                                            </p>
+                                            <p class="event-date para-font">
+                                                <img src="assets/images/map.png" alt="venue" class="clock"> National Exhibition and Convention center (Shanghai, China)
+                                            </p>
+                                            <p class="event-link para-font">
+                                                <a href="https://cacshow.com/web/#/pages/common/header/backdetailen?title=Introduction&amp;=&amp;=&amp;=&amp;type=1&amp;class=%E5%B1%95%E4%BC%9A%E6%A6%82%E5%86%B5&amp;type_lange=english" class="event-link para-font">
+                            Event Link
+                            <img src="assets/images/right-arrow.png" alt="arrow" class="r-arrow-img">
+                          </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="event-item">
+                                        <div class="event-logo">
+                                            <img src="assets/eventsupcomingupload/Screenshot%202024-06-14%20161557.png" alt="event-logo">
+                                        </div>
+                                        <div class="event-text">
+                                            <p class="event-title para-font">
+                                                GROWTECH. JAKARTA
+                                            </p>
+                                            <p class="event-date para-font">
+                                                <img src="assets/images/clock2.png" alt="clock" class="clock"> 4-6 SEPTEMBER 2024
+                                            </p>
+                                            <p class="event-date para-font">
+                                                <img src="assets/images/map.png" alt="venue" class="clock"> JIEXPO, Jakarta Indonesia
+                                            </p>
+                                            <p class="event-link para-font">
+                                                <a href="https://www.growtechjakarta.com/en/home.html" class="event-link para-font">
+                            Event Link
+                            <img src="assets/images/right-arrow.png" alt="arrow" class="r-arrow-img">
+                          </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="event-item">
+                                        <div class="event-logo">
+                                            <img src="assets/eventsupcomingupload/Mumbai.png" alt="event-logo">
+                                        </div>
+                                        <div class="event-text">
+                                            <p class="event-title para-font">
+                                                Agrifund- Revolutionizing Agri-Tech &amp; Food Tech
+                                            </p>
+                                            <p class="event-date para-font">
+                                                <img src="assets/images/clock2.png" alt="clock" class="clock"> 20-21 September, 2024
+                                            </p>
+                                            <p class="event-date para-font">
+                                                <img src="assets/images/map.png" alt="venue" class="clock"> Mumbai, India
+                                            </p>
+                                            <p class="event-link para-font">
+                                                <a href="https://www.agrifundx.com/" class="event-link para-font">
+                            Event Link
+                            <img src="assets/images/right-arrow.png" alt="arrow" class="r-arrow-img">
+                          </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="event-item">
+                                        <div class="event-logo">
+                                            <img src="assets/eventsupcomingupload/seagriculture-eu-2024-1.png" alt="event-logo">
+                                        </div>
+                                        <div class="event-text">
+                                            <p class="event-title para-font">
+                                                13th International Seaweed Conference EU (Seagriculture 2024)
+                                            </p>
+                                            <p class="event-date para-font">
+                                                <img src="assets/images/clock2.png" alt="clock" class="clock"> 18-20 Jun 2024
+                                            </p>
+                                            <p class="event-date para-font">
+                                                <img src="assets/images/map.png" alt="venue" class="clock"> Torshavn, Faroe Islands
+                                            </p>
+                                            <p class="event-link para-font">
+                                                <a href="https://seagriculture.eu/" class="event-link para-font">
+                            Event Link
+                            <img src="assets/images/right-arrow.png" alt="arrow" class="r-arrow-img">
+                          </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="event-item">
+                                        <div class="event-logo">
+                                            <img src="assets/eventsupcomingupload/AFT.png" alt="event-logo">
+                                        </div>
+                                        <div class="event-text">
+                                            <p class="event-title para-font">
+                                                Africa Farmtech Expo
+                                            </p>
+                                            <p class="event-date para-font">
+                                                <img src="assets/images/clock2.png" alt="clock" class="clock"> August 1-3, 2024
+                                            </p>
+                                            <p class="event-date para-font">
+                                                <img src="assets/images/map.png" alt="venue" class="clock"> Visa Oshwal Centre, Nairobi, Kenya
+                                            </p>
+                                            <p class="event-link para-font">
+                                                <a href="https://www.africafarmtechexpo.com/" class="event-link para-font">
+                            Event Link
+                            <img src="assets/images/right-arrow.png" alt="arrow" class="r-arrow-img">
+                          </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="event-item">
+                                        <div class="event-logo">
+                                            <img src="assets/eventsupcomingupload/4ab6dc51-9575-484c-8e2b-d072b72eaf57.jpg" alt="event-logo">
+                                        </div>
+                                        <div class="event-text">
+                                            <p class="event-title para-font">
+                                                https://www.saharaexpo.com/en/home.html
+                                            </p>
+                                            <p class="event-date para-font">
+                                                <img src="assets/images/clock2.png" alt="clock" class="clock"> 15 - 17 September 2024
+                                            </p>
+                                            <p class="event-date para-font">
+                                                <img src="assets/images/map.png" alt="venue" class="clock"> Egypt International Exhibition Centre
+                                            </p>
+                                            <p class="event-link para-font">
+                                                <a href="https://www.saharaexpo.com/en/home.html" class="event-link para-font">
+                            Event Link
+                            <img src="assets/images/right-arrow.png" alt="arrow" class="r-arrow-img">
+                          </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="event-item">
+                                        <div class="event-logo">
+                                            <img src="assets/eventsupcomingupload/IC.png" alt="event-logo">
+                                        </div>
+                                        <div class="event-text">
+                                            <p class="event-title para-font">
+                                                International Agricultural Chemicals, Fertilizer &amp; Pesticide Exhibition
+                                            </p>
+                                            <p class="event-date para-font">
+                                                <img src="assets/images/clock2.png" alt="clock" class="clock"> 30th July 2024 - 1st August 2024
+                                            </p>
+                                            <p class="event-date para-font">
+                                                <img src="assets/images/map.png" alt="venue" class="clock"> Jakarta, Indonesia
+                                            </p>
+                                            <p class="event-link para-font">
+                                                <a href="https://www.cantonfair.net/event/6756-international-agricultural-chemicals-fertilizer-pesticide-exhibition" class="event-link para-font">
+                            Event Link
+                            <img src="assets/images/right-arrow.png" alt="arrow" class="r-arrow-img">
+                          </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="event-item">
+                                        <div class="event-logo">
+                                            <img src="assets/eventsupcomingupload/AC.png" alt="event-logo">
+                                        </div>
+                                        <div class="event-text">
+                                            <p class="event-title para-font">
+                                                8th Agro Chem Bangladesh International Expo 2025
+                                            </p>
+                                            <p class="event-date para-font">
+                                                <img src="assets/images/clock2.png" alt="clock" class="clock"> May 2025
+                                            </p>
+                                            <p class="event-date para-font">
+                                                <img src="assets/images/map.png" alt="venue" class="clock"> Dhaka, Bangladesh
+                                            </p>
+                                            <p class="event-link para-font">
+                                                <a href="https://www.clocate.com/agro-chem-bangladesh-international-expo/90632/" class="event-link para-font">
+                            Event Link
+                            <img src="assets/images/right-arrow.png" alt="arrow" class="r-arrow-img">
+                          </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="event-item">
+                                        <div class="event-logo">
+                                            <img src="assets/eventsupcomingupload/yugaro.png" alt="event-logo">
+                                        </div>
+                                        <div class="event-text">
+                                            <p class="event-title para-font">
+                                                International Exhibition of Agricultural Machinery, Equipment and Materials for Crop Production (YUGAGRO)
+                                            </p>
+                                            <p class="event-date para-font">
+                                                <img src="assets/images/clock2.png" alt="clock" class="clock"> 19−22 November 2024
+                                            </p>
+                                            <p class="event-date para-font">
+                                                <img src="assets/images/map.png" alt="venue" class="clock"> Krasnodar, Russian Federation
+                                            </p>
+                                            <p class="event-link para-font">
+                                                <a href="https://yugagro.org/en/" class="event-link para-font">
+                            Event Link
+                            <img src="assets/images/right-arrow.png" alt="arrow" class="r-arrow-img">
+                          </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="event-item">
+                                        <div class="event-logo">
+                                            <img src="assets/eventsupcomingupload/RASE.png" alt="event-logo">
+                                        </div>
+                                        <div class="event-text">
+                                            <p class="event-title para-font">
+                                                Regenerative Agriculture Summit Europe
+                                            </p>
+                                            <p class="event-date para-font">
+                                                <img src="assets/images/clock2.png" alt="clock" class="clock"> 3-5 SEPTEMBER, 2024
+                                            </p>
+                                            <p class="event-date para-font">
+                                                <img src="assets/images/map.png" alt="venue" class="clock"> AMSTERDAM
+                                            </p>
+                                            <p class="event-link para-font">
+                                                <a href="https://regenerativeagriculturesummit.com/events/regenerative-agriculture-summit-europe-2024" class="event-link para-font">
+                            Event Link
+                            <img src="assets/images/right-arrow.png" alt="arrow" class="r-arrow-img">
+                          </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="event-item">
+                                        <div class="event-logo">
+                                            <img src="assets/eventsupcomingupload/AB.png" alt="event-logo">
+                                        </div>
+                                        <div class="event-text">
+                                            <p class="event-title para-font">
+                                                AgroBusiness MEDAFRICA Expo 2024
+                                            </p>
+                                            <p class="event-date para-font">
+                                                <img src="assets/images/clock2.png" alt="clock" class="clock"> 14 November - 16 November
+                                            </p>
+                                            <p class="event-date para-font">
+                                                <img src="assets/images/map.png" alt="venue" class="clock"> Africa
+                                            </p>
+                                            <p class="event-link para-font">
+                                                <a href="https://www.agrobusiness-medafrica.com/en/" class="event-link para-font">
+                            Event Link
+                            <img src="assets/images/right-arrow.png" alt="arrow" class="r-arrow-img">
+                          </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!--------------- TAB2 --------------->
+                        <div id="past" class="tab-pane fade">
+
+                            <div class="row common-width">
+
+
+                                <div class="col-12 col-md-3">
+                                    <ul class="nav nav-pills flex-column past-event-ul" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                        <li class="active"><a data-toggle="pill" href="#menu0">CAC 24- 24th China International Agrochemical &amp; Crop protection Exhibition</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-9">
+                                    <div class="tab-content" id="v-pills-tabContent">
+
+                                        <div id="menu0" class="tab-pane fade in active">
+                                            <img src="assets/eventspastupload/CAC-banner-1-scaled.webp" alt="event" class="past-event-img">
+                                            <img src="assets/eventspastupload/IMG-20240321-WA0038.jpg" alt="event" class="past-event-img">
+                                            <img src="assets/eventspastupload/CAC1.jpg" alt="event" class="past-event-img">
+                                            <img src="assets/eventspastupload/CAC2.jpg" alt="event" class="past-event-img">
+                                            <img src="assets/eventspastupload/CAC3.jpg" alt="event" class="past-event-img">
+                                            <img src="assets/eventspastupload/CAC5.jpg" alt="event" class="past-event-img">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        var page = "events";
+    </script>
+
+    <section class="footer-section">
+        <div class="row justify-content-between common-width ptb-20">
+            <div class="col-12 col-md-3">
+                <img src="../www.agrolook.com/assets/images/Agrolook.png" alt="logo" class="footer-logo">
+            </div>
+            <div class="col-4 col-md-1">
+                <div><a class="footer-text para-font" href="index-2.html">Home</a></div>
+                <div><a class="footer-text para-font" href="about.html">About</a></div>
+                <div><a class="footer-text para-font" href="login.html">Register</a></div>
+                <div><a class="footer-text para-font" href="weather.html">Weather</a></div>
+            </div>
+            <div class="col-4 col-md-1">
+                <div><a class="footer-text para-font" href="equipments.html">Equipments</a></div>
+                <div><a class="footer-text para-font" href="events.html">Events</a></div>
+                <div><a class="footer-text para-font" href="contact.html">Contact</a></div>
+            </div>
+            <div class="col-4 col-md-2">
+                <div class="ml-15">
+                    <img src="assets/images/facebook-b-outline.png" alt="logo3" class="footer-social-icon">
+                    <a class="footer-text para-font ml-5" target="_blank" href="https://www.facebook.com/mahamayalifescience/">Facebook</a>
+                </div>
+                <div class="ml-15">
+                    <img src="assets/images/instagram.png" alt="logo1" class="footer-social-icon">
+                    <a class="footer-text para-font ml-5" target="_blank" href="https://www.instagram.com/mahamaya_lifesciences/">Instagram</a>
+                </div>
+                <div class="ml-15">
+                    <img src="assets/images/twitter-b-outline.jpg" alt="logo2" class="footer-social-icon">
+                    <a class="footer-text para-font ml-5" target="_blank" href="https://x.com/MahamayaLifesc1">Twitter</a>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="ml-80">
+                    <p class="footer-p para-font subs-foot-text">Email Address</p>
+                    <form>
+                        <div class="form-floating d-flex mt-10">
+                            <input type="email" class="form-control footer-email" id="floatingInput" placeholder="Email Address">
+                            <label for="floatingInput" class="email-label"></label>
+                            <button type="button" class="btn btn-dark ok-btn">OK</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="address">
+                    <img src="assets/images/location-b-outline.png" alt="footer-map" class="footer-map-mob">
+                    <p class="footer-p para-font">
+                        Jagamonan Nagar, Bhubaneswar,pin:751030
+                    </p>
+                </div>
+                <div class="address">
+                    <img src="assets/images/phone-b-outline.png" alt="footer-map" class="footer-map-mob">
+                    <a class="para-font" href="tel:+919971222723">+91 9971222723</a>
+                </div>
+                <div class="address">
+                    <img src="assets/images/mail-b-outline.png" alt="footer-map" class="footer-map-mob">
+                    <a class="para-font" href="mailto:info@agrotech.com">info@agrotech.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-footer-sticky">
+        <div class="row common-width">
+            <div class="col-md-6">
+                <p class="copyright-text">
+                    Copyright @Agrotech. All Rights Reserved.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <p class="copyright-text bm-link">
+                    Created by <a target="_blank" href="https://www.agrotech.com/">Agrotech Team</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="../cdn.jsdelivr.net/npm/bootstrap%405.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+-->
+
+    <script type="text/javascript" src="../cdn.jsdelivr.net/npm/slick-carousel%401.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            $('.items').slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1
+            });
+            $('.partners').slick({
+                infinite: true,
+                slidesToShow: 2,
+                slidesToScroll: 1
+            });
+        });
+    </script>
+
+
+
+    <script>
+        $(document).ready(function() {
+            $("#navbar-ul li a").click(function() {
+                $("#navbar-ul li a.active").removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+    </script>
+
+    <script>
+        if (page == 'home') {
+            $('#homeid').addClass('active');
+        } else if (page == 'about') {
+            $('#aboutid').addClass('active');
+        } else if (page == 'news') {
+            $('#newsid').addClass('active');
+        } else if (page == 'events') {
+            $('#eventsid').addClass('active');
+        } else if (page == 'subscription') {
+            $('#subscriptionid').addClass('active');
+        } else if (page == 'magazine') {
+            $('#subscriptionid').addClass('active');
+        } else if (page == 'sponsors') {
+            $('#sponsorsid').addClass('active');
+        } else if (page == 'contact') {
+            $('#contactid').addClass('active');
+        }
+    </script>
+
+</body>
+
+
+<!-- Mirrored from www.agrolook.com/events by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 25 Jul 2024 14:13:43 GMT -->
+
+</html>

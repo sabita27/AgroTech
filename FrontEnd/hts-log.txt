@@ -1,0 +1,43 @@
+HTTrack3.49-2+htsswf+htsjava launched on Thu, 25 Jul 2024 19:42:23 at https://www.agrolook.com +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://www.agrolook.com -O1 "C:\My Web Sites\agrolook1" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/Calibri-Bold.woff2 (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/Calibri-Bold.woff (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/Calibri.woff2 (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/Calibri.woff (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/Calibri-Italic.woff2 (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/Calibri-Italic.woff (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/Calibri-Light.woff2 (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/Calibri-Light.woff (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/Calibri-BoldItalic.woff2 (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/Calibri-BoldItalic.woff (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/MinionPro-Bold.woff2 (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/MinionPro-Bold.woff (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/Calibri-LightItalic.woff2 (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/Calibri-LightItalic.woff (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/MinionPro-BoldIt.woff2 (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/MinionPro-BoldIt.woff (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/MinionPro-BoldCnIt.woff2 (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/MinionPro-BoldCnIt.woff (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/MinionPro-BoldCn.woff2 (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/MinionPro-BoldCn.woff (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/MinionPro-MediumIt.woff2 (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/MinionPro-MediumIt.woff (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/MinionPro-Medium.woff2 (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/MinionPro-Medium.woff (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/MinionPro-It.woff2 (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/MinionPro-It.woff (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/MinionPro-Regular.woff2 (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/MinionPro-Regular.woff (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/MinionPro-SemiboldIt.woff2 (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/MinionPro-SemiboldIt.woff (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/MinionPro-Semibold.woff2 (from https://www.agrolook.com/assets/css/style.css)
+19:43:52	Error: 	"Not Found" (404) at link https://www.agrolook.com/assets/fonts/MinionPro-Semibold.woff (from https://www.agrolook.com/assets/css/style.css)
+
+HTTrack Website Copier/3.49-2 mirror complete in 1 minutes 29 seconds : 153 links scanned, 118 files written (22158736 bytes overall) [21062185 bytes received at 236653 bytes/sec], 1851675 bytes transferred using HTTP compression in 69 files, ratio 24%, 3.9 requests per connection
+(32 errors, 0 warnings, 0 messages)
